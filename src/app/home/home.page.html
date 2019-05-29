@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-list>
+      <ion-item *ngFor="let carro of carros" >
+        <ion-label>
+          <h3> {{ carro.nome }} </h3>
+          <p> R$ {{ carro.preco }} </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>
